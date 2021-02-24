@@ -1,0 +1,24 @@
+body {
+    background-color: #ffffff;
+}
+
+#canvas1 {
+    width: "400";
+    height: "400";
+    background-color: #68999b;
+}
+
+#digital {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-family: lucida, monospace;
+    background-color: #063169;
+    font-size: 50px;
+    font-weight: bold;
+    color: #a3ff8c;
+}
+
+.mainDIV {
+    text-align: center;
+}
