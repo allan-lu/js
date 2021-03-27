@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles-3.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="js/scripts-3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid d-flex flex-column vh-100 overflow-hidden">
+      <div class="header bg-light">
+        <h1 class="text-center">NYC Sewer Data Map</h1>
+      </div>
+      <div class="row d-flex flex-grow-1 overflow-hidden">
+        <div class="panel col-2 pb-2 border mh-100 overflow-auto">
+          <div class="bg-dark sticky-top py-2">
+            <h4 class="text-white text-center">Neighborhoods</h4>
+          </div>
+          <ul id="nbhd-container" class="list-group"></ul>
+        </div>
+        <div id="map-container" class="col">
+          <div id="mapid"></div>
+          <button
+            id="maxbtn"
+            type="button"
+            class="btn btn-outline-secondary position-absolute unselectable"
+          >
+            Maximize
+          </button>
+        </div>
+        <div class="panel col-2 pb-2 border mh-100 overflow-auto">
+          <div class="bg-dark sticky-top py-2">
+            <h4 class="text-white text-center">Attributes</h4>
+          </div>
+          <ul id="attr-container" class="list-group"></ul>
+        </div>
+      </div>
+      <div class="footer row d-inline-flex bg-light justify-content-between">
+        <div class="px-2">
+          <p class="m-0">
+            *Neighborhood selections are actually
+            <a
+              href="https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-nynta.page"
+              class="text-info"
+            > neighborhood tabulation areas</a>. Dataset was compiled in PostgresSQL.
+          </p>
+          <p class="m-0">
+            Data Sources: NYC Departments of
+            <a href="https://www1.nyc.gov/site/planning/index.page">~ City Planning</a>,
+            <a href="https://www1.nyc.gov/site/dep/index.page">~ Environmental Protection</a>,
+            <a href="https://www1.nyc.gov/site/doitt/index.page">~ Information Technology & Telecommunications</a>, 
+            <a href="https://www.nycgovparks.org/">~ Parks & Recreation</a>, and
+            <a href="https://openseweratlas.tumblr.com">Open Sewer Atlas NYC</a>
+          </p>
+        </div>
+        <div class="px-2 bg-light d-flex align-items-end">
+          <p class="m-0">Author: Allan Lu</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

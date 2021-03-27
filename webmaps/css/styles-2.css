@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 0px;
+  font-family: verdana;
+  font-size: 14px;
+  color: black;
+  direction: ltr;
+}
+
+#mapid {
+  float: left;
+  flex: auto;
+  border: 1px solid;
+}
+
+#rightPanel {
+  direction: rtl;
+}
+
+.header, .footer {
+  background-color: rgb(175, 196, 255);
+  height: 100px;
+  padding: 5px;
+}
+
+.header {
+  text-align: center;
+  font-size: 20px;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex: auto;
+  min-height: 300px;
+}
+
+.panel {
+  float: left;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  width: 200px;
+  min-width: 150px;
+  max-width: 30%;
+  background-color: rgb(130, 194, 158);
+  resize: horizontal;
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: left;
+  display: table;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

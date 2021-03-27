@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Lab 3 - Webpage</title>
+    <meta name="author" content="Allan Lu">
+    <meta name="description" content="Responsive webpage">
+    <meta name="keywords" content="WebGIS, JavaScript, CSS, HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles-1.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="">
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="js/scripts-1.js"></script>
+  </head>
+
+  <body>
+    <div id="mapid"></div>
+    <div>
+      <ul class="unselectable">
+        <li id="leftBtn">Left Panel</li>
+        <li id="rightBtn">Right Panel</li>
+        <li id="bothBtn">Both Panels</li>
+      </ul>
+    </div>
+    <div id="leftPanel" class="panel">
+      <p>This panel is to introduce the map area and data sources.</p>
+    </div>
+    <div id="rightPanel" class="panel">
+      <p>This panel is for information on specific data in the map.</p>
+    </div>
+  </body>
+</html>
